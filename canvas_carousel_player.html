@@ -63,10 +63,13 @@ ul, menu, dir {
 
 /* Previous/Next */
 .carousel-control-prev, .carousel-control-next {
-  width: 50px;
-  height: 170px;
-  z-index: 2;
-  opacity: 1.0 !important;
+  width: 50px;
+  height: 170px;
+  z-index: 2;
+  opacity: 1.0 !important;
+  /* 👇 MODIFIED/ADDED LINES 👇 */
+  background-color: rgba(255, 255, 255, 0.75); /* Adds the white, semi-transparent background */
+  padding: 0 5px; /* Adds space around the icon */
 }
 
 .carousel-control-prev .bi-chevron-left, .carousel-control-next .bi-chevron-right {
