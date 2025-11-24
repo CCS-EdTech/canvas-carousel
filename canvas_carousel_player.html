@@ -169,6 +169,7 @@ ul, menu, dir {
     const imgEl = document.createElement('img');
     imgEl.setAttribute('src', imagePathStem + slide.imageFileName); // safe sink
     imgEl.setAttribute('alt', slide.altText); // safe sink
+    imgEl.classList.add('w-100');
 
     const linkEl = document.createElement('a');
     linkEl.setAttribute('href', slide.linkURL); // safe sink
