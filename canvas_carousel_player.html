@@ -19,16 +19,9 @@
 
 /* Layout */
 #canvas-carousel {
-  width: 100%;
-  max-width: 650px;
+  width: 650px;
   height: 200px;
   cursor: pointer;
-}
-
-.carousel-item img { /* <--- NEW, STRONG RULE ADDED */
-    width: 100%;
-    height: auto; 
-    max-width: 100%;
 }
 
 .carousel-inner > .carousel-item > a {
@@ -63,10 +56,10 @@ ul, menu, dir {
 
 /* Previous/Next */
 .carousel-control-prev, .carousel-control-next {
-  width: 20px;
-  height: 170px;
-  z-index: 2;
-  opacity: 1.0 !important;
+  width: 50px;
+  height: 170px;
+  z-index: 2;
+  opacity: 1.0 !important;
 }
 
 .carousel-control-prev .bi-chevron-left, .carousel-control-next .bi-chevron-right {
@@ -175,7 +168,6 @@ ul, menu, dir {
     const imgEl = document.createElement('img');
     imgEl.setAttribute('src', imagePathStem + slide.imageFileName); // safe sink
     imgEl.setAttribute('alt', slide.altText); // safe sink
-    imgEl.classList.add('w-100');
 
     const linkEl = document.createElement('a');
     linkEl.setAttribute('href', slide.linkURL); // safe sink
